@@ -1,8 +1,19 @@
-1.0.1
+1.0.2 * 2018-01-14
+- - - -  - - - -
+* Added pressure tanks. These will contain useful resources that exist in gas and liquid form, primarily propellants
+  * 1.25m (from Mk1 LF Fuselage)
+  * Mk2 short tank
+  * Mk2 short adapter
+* Adjusted colors on Voyager Mk2 parts
+* WarpJet IntakeAtm efficiency scales with Sigma Dimensions
+
+
+1.0.1 * 2018-01-08
 - - - -  - - - -
 * Fixed missing FX and sounds in Japier engines
 
 
-1.0.0.0
+
+1.0.0 * 2018-01-05
 - - - -  - - - -  - - - -  - - - -  - - - -  - - - -  - - - -  - - - -  - - - -  - - - -  - - - - 
 * Initial release.
