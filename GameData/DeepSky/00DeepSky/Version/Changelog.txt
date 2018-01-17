@@ -4,8 +4,10 @@
   * 1.25m (from Mk1 LF Fuselage)
   * Mk2 short tank
   * Mk2 short adapter
+  * Radial long
 * Adjusted colors on Voyager Mk2 parts
 * WarpJet IntakeAtm efficiency scales with Sigma Dimensions
+* Buffed Water harvester rate
 
 
 1.0.1 * 2018-01-08
