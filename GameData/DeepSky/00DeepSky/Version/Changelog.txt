@@ -1,4 +1,4 @@
-1.0.2 * 2018-01-14
+1.0.2 * 2018-01-30
 - - - -  - - - -
 * Added pressure tanks. These will contain useful resources that exist in gas and liquid form, primarily propellants
   * 1.25m (from Mk1 LF Fuselage)
@@ -6,8 +6,12 @@
   * Mk2 short adapter
   * Radial long
 * Adjusted colors on Voyager Mk2 parts
-* WarpJet IntakeAtm efficiency scales with Sigma Dimensions
-* Buffed Water harvester rate
+* Intakes retextured
+* Japier WarpJets
+  * IntakeAtm efficiency scales with Sigma Dimensions
+  * Gimbals now animate
+  * Retextured
+* Buffed Water harvester rates
 
 
 1.0.1 * 2018-01-08
