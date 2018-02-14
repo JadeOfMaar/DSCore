@@ -5,6 +5,7 @@
   * Mk2 short tank
   * Mk2 short adapter
   * Radial long
+  * 2.5m (from Kerbodyne short 3.75m)
 * Adjusted colors on Voyager Mk2 parts
 * Intakes retextured
 * Japier WarpJets
