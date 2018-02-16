@@ -1,0 +1,254 @@
+// Propellium	0.0000708
+// SpiceGas		0.000001251
+// Water		0.001000000
+// XenonGas		0.000100000
+
+B9_TANK_TYPE:NEEDS[B9PartSwitch]
+{
+	name = DS_PPLM
+	tankMass = 0.0000
+	tankCost = 0
+	// percentFilled = 100
+	RESOURCE
+	{
+		name = Propellium
+		unitsPerVolume = 33.0857
+	}
+}
+
+B9_TANK_TYPE:NEEDS[B9PartSwitch]
+{
+	name = DS_HLOX
+	tankMass = 0.0000
+	tankCost = 0
+	// percentFilled = 100
+	RESOURCE
+	{
+		name = Propellium
+		unitsPerVolume = 16.543
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		unitsPerVolume = 0.2316
+	}
+}
+B9_TANK_TYPE:NEEDS[B9PartSwitch]
+{
+	name = DS_Atm
+	tankMass = 0.0000
+	tankCost = 0
+	// percentFilled = 100
+	RESOURCE
+	{
+		name = Atmosphere
+		unitsPerVolume = 0.4632
+	}
+}
+
+B9_TANK_TYPE:NEEDS[B9PartSwitch]
+{
+	name = DS_Xe
+	tankMass = 0.0000
+	tankCost = 0
+	RESOURCE
+	{
+		name = XenonGas
+		unitsPerVolume = 18.25
+	}
+}
+B9_TANK_TYPE:NEEDS[B9PartSwitch]
+{
+	name = DS_H2O
+	tankMass = 0.0000
+	tankCost = 0
+	RESOURCE
+	{
+		name = Water
+		unitsPerVolume = 2.3 // 0.4632
+	}
+}
+// 0.4632
+B9_TANK_TYPE:NEEDS[B9PartSwitch]
+{
+	name = DS_LFO
+	tankMass = 0.0000
+	tankCost = 0
+	RESOURCE
+	{
+		name = LiquidFuel
+		unitsPerVolume = 0.20844
+		percentFilled = 100
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		unitsPerVolume = 0.25476
+		percentFilled = 100
+	}
+}
+B9_TANK_TYPE:NEEDS[B9PartSwitch]
+{
+	name = DS_LF
+	tankMass = 0.0000
+	tankCost = 0
+	RESOURCE
+	{
+		name = LiquidFuel
+		unitsPerVolume = 0.4632
+		percentFilled = 100
+	}
+}
+B9_TANK_TYPE:NEEDS[B9PartSwitch]
+{
+	name = DS_OX
+	tankMass = 0.0000
+	tankCost = 0
+	RESOURCE
+	{
+		name = Oxidizer
+		unitsPerVolume = 0.4632
+		percentFilled = 100
+	}
+}
+
+@PART[ds00_pres_mk1|ds00_pres_mk2|ds00_pres_mk2adap|ds00_pres_srf1|ds00_pres_250]:NEEDS[B9PartSwitch]
+{
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		moduleID = PressureTanks
+		switcherDescription = Pressure Tank
+		SUBTYPE
+		{
+			name = AtmoStandard
+			tankType = DS_Atm
+			title = Atmosphere
+		}
+		SUBTYPE
+		{
+			name = Xenon
+			tankType = DS_Xe
+			title = XenonGas
+		}
+		// SUBTYPE
+		// {
+			// name = LFO
+			// tankType = DS_LFO
+			// title = LiquidFuel+Oxidizer
+		// }
+		SUBTYPE
+		{
+			name = Water
+			tankType = DS_H2O
+			title = Water
+		}
+		SUBTYPE:NEEDS[CryogenicEngines|KerbalAtomics|FarFutureTechnologies]
+		{
+			name = Propellium
+			tankType = DS_PPLM
+			title = Propellium
+		}
+		SUBTYPE:NEEDS[CryogenicEngines|KerbalAtomics|FarFutureTechnologies]
+		{
+			name = HydroLOX
+			tankType = DS_HLOX
+			title = Propellium + Oxidizer
+		}
+	}
+}
+
+@PART[ds00_pres_mk1|ds00_pres_mk2|ds00_pres_mk2adap]:NEEDS[B9PartSwitch]
+{
+	@MODULE[ModuleB9PartSwitch]
+	{
+		baseVolume = 863.5
+	}
+}
+@PART[ds00_pres_srf1]:NEEDS[B9PartSwitch]
+{
+	@MODULE[ModuleB9PartSwitch]
+	{
+		baseVolume = 259
+	}
+}
+@PART[ds00_pres_250]:NEEDS[B9PartSwitch]
+{
+	@MODULE[ModuleB9PartSwitch]
+	{
+		baseVolume = 3141.6
+	}
+}
+
+// Change stock Mk2 parts: includes long adapter and bicoupler
+@PART[mk2SpacePlaneAdapter|mk2_1m_AdapterLong|mk2_1m_Bicoupler]:NEEDS[B9PartSwitch]
+{
+	!RESOURCE,* {}
+	@MODEL
+	{
+		texture = mk2adapters1m, DeepSky/00DeepSky/Parts/Tanks/mk2pressureadapters
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		moduleID = PressureTanks
+		switcherDescription = Pressure Tank
+		
+		SUBTYPE
+		{
+			name = LFO
+			tankType = DS_LFO
+			title = LiquidFuel+Oxidizer
+		}
+		SUBTYPE
+		{
+			name = LF
+			tankType = DS_LF
+			title = LiquidFuel
+		}
+		SUBTYPE
+		{
+			name = OX
+			tankType = DS_OX
+			title = Oxidizer
+		}
+		SUBTYPE
+		{
+			name = Water
+			tankType = DS_H2O
+			title = Water
+		}
+		SUBTYPE
+		{
+			name = AtmoStandard
+			tankType = DS_Atm
+			title = Atmosphere
+		}
+		SUBTYPE
+		{
+			name = Xenon
+			tankType = DS_Xe
+			title = XenonGas
+		}
+	}
+}
+
+@PART[mk2SpacePlaneAdapter|mk2_1m_Bicoupler]:NEEDS[B9PartSwitch]
+{
+	@MODULE[ModuleB9PartSwitch]
+	{
+		baseVolume = 863.5
+	}
+}
+@PART[mk2_1m_AdapterLong]:NEEDS[B9PartSwitch]
+{
+	@MODULE[ModuleB9PartSwitch]
+	{
+		baseVolume = 1727
+	}
+}
+
+@PART[mk2SpacePlaneAdapter|mk2_1m_AdapterLong|mk2_1m_Bicoupler]:AFTER[InterstellarFulSwitch]
+{
+	!MODULE[InterstellarFuelSwitch] {}
+}

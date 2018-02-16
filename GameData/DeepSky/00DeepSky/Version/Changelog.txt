@@ -5,7 +5,7 @@
   * Mk2 short tank
   * Mk2 short adapter
   * Radial long
-  * 2.5m (from Kerbodyne short 3.75m)
+  * 2.5m short (from Kerbodyne short 3.75m)
 * Adjusted colors on Voyager Mk2 parts
 * Intakes retextured
 * Japier WarpJets
@@ -13,6 +13,7 @@
   * Gimbals now animate
   * Retextured
 * Buffed Water harvester rates
+* WBI Play Mode integration: Choose between CRP and Classic Stock
 
 
 1.0.1 * 2018-01-08

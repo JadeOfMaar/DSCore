@@ -1,0 +1,123 @@
+// Deep Sky Core
+// Intakes
+@PART[ds00_int*]
+{
+	@MODULE[ModuleResourceIntake]:HAS[#resourceName[IntakeAtm]]
+	{
+		@ModuleResourceIntake = Atmosphere
+	}
+	@RESOURCE[IntakeAtm]
+	{
+		@name = Atmosphere
+	}
+}
+// Engines
+@PART[ds00_japier*]
+{
+	@MODULE[ModuleResourceIntake]:HAS[#resourceName[IntakeAtm]]
+	{
+		@ModuleResourceIntake = Atmosphere
+	}
+	@RESOURCE[IntakeAtm]
+	{
+		@name = Atmosphere
+	}
+	@MODULE[ModuleEnginesFX],*
+	{
+		@PROPELLANT[IntakeAtm]
+		{
+			@name = Atmosphere
+		}
+	}
+}
+
+// Thor Tech
+// RCS
+@PART[dstt_RCS*]
+{
+	@MODULE[ModuleRCSFX]
+	{
+		@resourceName = Atmosphere
+		@PROPELLANT[IntakeAtm]
+		{
+			@name = Atmosphere
+		}
+	}
+}
+// Engines
+@PART[dstt_turbofan*]:HAS[@MODULE[ModuleEnginesFX]]
+{
+	@MODULE[ModuleResourceIntake]:HAS[#resourceName[IntakeAtm]]
+	{
+		@ModuleResourceIntake = Atmosphere
+	}
+	@RESOURCE[IntakeAtm]
+	{
+		@name = Atmosphere
+	}
+	@MODULE[ModuleEnginesFX],*
+	{
+		@PROPELLANT[IntakeAtm]
+		{
+			@name = Atmosphere
+		}
+	}
+}
+@PART[dstt_propfan*]:HAS[@MODULE[ModuleEnginesFX]]
+{
+	@MODULE[ModuleResourceIntake]:HAS[#resourceName[IntakeAtm]]
+	{
+		@ModuleResourceIntake = Atmosphere
+	}
+	@RESOURCE[IntakeAtm]
+	{
+		@name = Atmosphere
+	}
+	@MODULE[ModuleEnginesFX],*
+	{
+		@PROPELLANT[IntakeAtm]
+		{
+			@name = Atmosphere
+		}
+	}
+}
+@PART[dstt_razor*]:HAS[@MODULE[ModuleEnginesFX]]
+{
+	@MODULE[ModuleEnginesFX],*
+	{
+		@PROPELLANT[IntakeAtm]
+		{
+			@name = Atmosphere
+		}
+	}
+}
+@PART[dstt_vtolfan*]:HAS[@MODULE[ModuleEnginesFX]]
+{
+	@MODULE[ModuleResourceIntake]:HAS[#resourceName[IntakeAtm]]
+	{
+		@ModuleResourceIntake = Atmosphere
+	}
+	@RESOURCE[IntakeAtm]
+	{
+		@name = Atmosphere
+	}
+	@MODULE[ModuleEnginesFX],*
+	{
+		@PROPELLANT[IntakeAtm]
+		{
+			@name = Atmosphere
+		}
+	}
+}
+
+// The Spice
+@PART[dsts_mk2spike]:HAS[@MODULE[ModuleEnginesFX]]
+{
+	@MODULE[ModuleEnginesFX],0
+	{
+		@PROPELLANT[IntakeAtm]
+		{
+			@name = Atmosphere
+		}
+	}
+}

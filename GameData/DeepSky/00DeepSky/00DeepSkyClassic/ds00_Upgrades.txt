@@ -1,0 +1,127 @@
+PARTUPGRADE
+{
+	name = ds00_LOXDistiller
+	partIcon = ds00_kPad
+	techRequired = aerospaceTech
+	entryCost = 9000
+	cost = 0 // for display only; all parts implementing this will need a PartStatsUpgradeModule with cost = this.
+	title = LOX Distillation System
+	basicInfo = In-flight Oxidizer generation.
+	manufacturer = Deep Sky
+	description = Installs hypersonic propellant distillation system into select intake parts. Enables intercooler style separation of Oxygen from breathable atmospheres and direct conversion into Oxidizer.
+}
+
+PARTUPGRADE
+{
+	name = ds00_VADistiller
+	partIcon = ds00_kPad
+	techRequired = advScienceTech
+	entryCost = 9000
+	cost = 0 // for display only; all parts implementing this will need a PartStatsUpgradeModule with cost = this.
+	title = Variety Atmosphere Distiller
+	basicInfo = In-flight multi-resource filtration.
+	manufacturer = Deep Sky
+	description = Installs Wild Blue prospector-based distillation system into select intake parts. Enables in-flight separation of many useful resources from a planet's atmosphere or ocean.
+}
+
+PARTUPGRADE:NEEDS[!TheSpice]
+{
+	name = ds00_BurstPower
+	partIcon = ds00_kPad
+	techRequired = experimentalElectrics
+	entryCost = 9000
+	cost = 0 // for display only; all parts implementing this will need a PartStatsUpgradeModule with cost = this.
+	title = WarpJet Burst Mode FSB Upgrade
+	basicInfo = Thicker electrical paths for better propulsion
+	manufacturer = Deep Sky
+	description = Installs thicker and sturdier electrical pathway systems within select WarpJet engines or supplemental hardware for faster charging and longer runtime. Warning: Increased chance of overheating.
+}
+
+@PART[ds00_intakemk2,ds00_intrbm]
+{
+	RESOURCE
+	{
+		name = IntakeLqd
+		amount = 8
+		maxAmount = 8
+	}
+	
+	MODULE
+	{
+		name = WBIProspector
+		ConverterName = Atmosphere Processor
+		StartActionName = Start Atmosphere Processor
+		StopActionName = Stop Atmosphere Processor
+		AutoShutdown = false
+		GeneratesHeat = false
+		guiVisible = true
+		harvestTypes = Atmospheric
+		outputsGuiName = Show Processor Outputs
+
+		INPUT_RESOURCE
+		{
+			ResourceName = Atmosphere
+			Ratio = 0.1
+		}		
+
+		INPUT_RESOURCE
+		{
+			ResourceName = ElectricCharge
+			Ratio = 5
+		}
+		moduleIsEnabled = false
+		showUpgradesInModuleInfo = true
+		UPGRADES
+		{
+			UPGRADE
+			{
+				name__ = ds00_VADistiller
+				description__ = Atmosphere harvester
+				techRequired__ = advScienceTech
+				moduleIsEnabled = true
+			}
+		}	
+	}
+	
+	MODULE
+	{
+		name = WBIProspector
+		ConverterName = Liquid Distiller
+		StartActionName = Start Liquid Distiller
+		StopActionName = Stop Liquid Distiller
+		AutoShutdown = false
+		GeneratesHeat = false
+		guiVisible = true
+		harvestTypes = Oceanic
+		outputsGuiName = Show Distiller Outputs
+
+		INPUT_RESOURCE
+		{
+			ResourceName = IntakeLqd
+			Ratio = 0.1
+		}		
+
+		INPUT_RESOURCE
+		{
+			ResourceName = ElectricCharge
+			Ratio = 5
+		}
+		moduleIsEnabled = false
+		showUpgradesInModuleInfo = true
+		UPGRADES
+		{
+			UPGRADE
+			{
+				name__ = ds00_VADistiller
+				description__ = Ocean harvester
+				techRequired__ = advScienceTech
+				moduleIsEnabled = true
+			}
+		}
+	}
+}
+
+// @PART[ds00_intakemk2,ds00_intrbm]
+// {
+	
+// }
