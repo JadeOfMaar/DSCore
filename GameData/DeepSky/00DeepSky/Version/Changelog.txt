@@ -1,4 +1,4 @@
-1.0.2 * 2018-01-30
+2.0.0 * 2018-02-18
 - - - -  - - - -
 * Added pressure tanks. These will contain useful resources that exist in gas and liquid form, primarily propellants
   * 1.25m (from Mk1 LF Fuselage)
@@ -14,6 +14,7 @@
   * Retextured
 * Buffed Water harvester rates
 * WBI Play Mode integration: Choose between CRP and Classic Stock
+* Version file correctly named... ???
 
 
 1.0.1 * 2018-01-08
