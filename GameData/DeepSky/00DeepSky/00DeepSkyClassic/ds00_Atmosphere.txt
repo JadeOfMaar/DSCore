@@ -4,7 +4,7 @@
 {
 	@MODULE[ModuleResourceIntake]:HAS[#resourceName[IntakeAtm]]
 	{
-		@ModuleResourceIntake = Atmosphere
+		@resourceName = Atmosphere
 	}
 	@RESOURCE[IntakeAtm]
 	{
@@ -16,7 +16,7 @@
 {
 	@MODULE[ModuleResourceIntake]:HAS[#resourceName[IntakeAtm]]
 	{
-		@ModuleResourceIntake = Atmosphere
+		@resourceName = Atmosphere
 	}
 	@RESOURCE[IntakeAtm]
 	{
@@ -44,12 +44,24 @@
 		}
 	}
 }
+// Intakes
+@PART[dstt_vtolintake*]
+{
+	@MODULE[ModuleResourceIntake]:HAS[#resourceName[IntakeAtm]]
+	{
+		@resourceName = Atmosphere
+	}
+	@RESOURCE[IntakeAtm]
+	{
+		@name = Atmosphere
+	}
+}
 // Engines
 @PART[dstt_turbofan*]:HAS[@MODULE[ModuleEnginesFX]]
 {
 	@MODULE[ModuleResourceIntake]:HAS[#resourceName[IntakeAtm]]
 	{
-		@ModuleResourceIntake = Atmosphere
+		@resourceName = Atmosphere
 	}
 	@RESOURCE[IntakeAtm]
 	{
@@ -67,7 +79,7 @@
 {
 	@MODULE[ModuleResourceIntake]:HAS[#resourceName[IntakeAtm]]
 	{
-		@ModuleResourceIntake = Atmosphere
+		@resourceName = Atmosphere
 	}
 	@RESOURCE[IntakeAtm]
 	{
@@ -95,7 +107,7 @@
 {
 	@MODULE[ModuleResourceIntake]:HAS[#resourceName[IntakeAtm]]
 	{
-		@ModuleResourceIntake = Atmosphere
+		@resourceName = Atmosphere
 	}
 	@RESOURCE[IntakeAtm]
 	{
