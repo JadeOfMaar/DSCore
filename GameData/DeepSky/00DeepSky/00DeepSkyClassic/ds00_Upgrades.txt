@@ -42,8 +42,27 @@ PARTUPGRADE:NEEDS[!TheSpice]
 	RESOURCE
 	{
 		name = IntakeLqd
-		amount = 8
+		amount = 0
 		maxAmount = 8
+	}
+	
+	MODULE
+	{
+		name = ModuleResourceHarvester
+		HarvesterType = 3
+		Efficiency = 0.8
+		airSpeedStatic = 3000
+		ResourceName = Atmosphere
+		ConverterName = Atmosphere Edge Filter
+		StartActionName = Start Atmosphere Edge Filter
+		StopActionName = Stop Atmosphere Edge Filter
+		ToggleActionName = Toggle Atmosphere Edge Filter
+		intakeTransformName = Intake
+		INPUT_RESOURCE
+		{
+			ResourceName = ElectricCharge
+			Ratio = 1
+		}
 	}
 	
 	MODULE
