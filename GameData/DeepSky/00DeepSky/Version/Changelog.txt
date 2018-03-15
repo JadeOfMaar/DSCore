@@ -1,9 +1,19 @@
+2.0.2 * 2018-03-00
+- - - -  - - - -  - - - -  - - - -
+* Polished off WBI Play Modes
+* Found missing Tweakscale option
+* Added tech tree node for Japier engines
+* Raised EC demand on in-flight Oxidizer generators
+* Added IntakeLqd to all intakes
+
+
 2.0.1 * 2018-02-28
-- - - -  - - - -
+- - - -  - - - -  - - - -  - - - -
 * Removed a config that didn't belong. It broke some stock Mk2 tanks
 
+
 2.0.0 * 2018-02-18
-- - - -  - - - -
+- - - -  - - - -  - - - -  - - - -
 * Added pressure tanks. These will contain useful resources that exist in gas and liquid form, primarily propellants
   * 1.25m (from Mk1 LF Fuselage)
   * Mk2 short tank
@@ -22,7 +32,7 @@
 
 
 1.0.1 * 2018-01-08
-- - - -  - - - -
+- - - -  - - - -  - - - -  - - - -
 * Fixed missing FX and sounds in Japier engines
 
 

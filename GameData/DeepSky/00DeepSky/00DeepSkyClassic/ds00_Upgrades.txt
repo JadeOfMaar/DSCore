@@ -39,19 +39,12 @@ PARTUPGRADE:NEEDS[!TheSpice]
 
 @PART[ds00_intakemk2,ds00_intrbm]
 {
-	RESOURCE
-	{
-		name = IntakeLqd
-		amount = 0
-		maxAmount = 8
-	}
 	
 	MODULE
 	{
 		name = ModuleResourceHarvester
 		HarvesterType = 3
 		Efficiency = 0.8
-		airSpeedStatic = 3000
 		ResourceName = Atmosphere
 		ConverterName = Atmosphere Edge Filter
 		StartActionName = Start Atmosphere Edge Filter
@@ -139,8 +132,3 @@ PARTUPGRADE:NEEDS[!TheSpice]
 		}
 	}
 }
-
-// @PART[ds00_intakemk2,ds00_intrbm]
-// {
-	
-// }
