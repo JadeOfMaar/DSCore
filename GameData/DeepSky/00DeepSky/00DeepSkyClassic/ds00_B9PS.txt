@@ -6,108 +6,78 @@
 B9_TANK_TYPE:NEEDS[B9PartSwitch]
 {
 	name = DS_PPLM
-	tankMass = 0.0000
-	tankCost = 0
+	tankMass = 0.00007085
+	tankCost = 0.15
 	// percentFilled = 100
 	RESOURCE
 	{
 		name = Propellium
-		unitsPerVolume = 33.0857
+		unitsPerVolume = 5
 	}
 }
 
 B9_TANK_TYPE:NEEDS[B9PartSwitch]
 {
-	name = DS_HLOX
-	tankMass = 0.0000
-	tankCost = 0
+	name = DS_PLOX
+	tankMass = 0.00007085
+	tankCost = 0.15
 	// percentFilled = 100
 	RESOURCE
 	{
 		name = Propellium
-		unitsPerVolume = 16.543
+		unitsPerVolume = 3
 	}
 	RESOURCE
 	{
-		name = Oxidizer
-		unitsPerVolume = 0.2316
+		name = Oxium
+		unitsPerVolume = 0.2
 	}
 }
 B9_TANK_TYPE:NEEDS[B9PartSwitch]
 {
 	name = DS_Atm
-	tankMass = 0.0000
+	tankMass = 0
 	tankCost = 0
 	// percentFilled = 100
 	RESOURCE
 	{
 		name = Atmosphere
-		unitsPerVolume = 0.4632
+		unitsPerVolume = 1
 	}
 }
 
 B9_TANK_TYPE:NEEDS[B9PartSwitch]
 {
 	name = DS_Xe
-	tankMass = 0.0000
+	tankMass =  0.000233745
 	tankCost = 0
 	RESOURCE
 	{
 		name = XenonGas
-		unitsPerVolume = 18.25
+		unitsPerVolume = 3
 	}
 }
 B9_TANK_TYPE:NEEDS[B9PartSwitch]
 {
 	name = DS_H2O
-	tankMass = 0.0000
-	tankCost = 0
+	tankMass = 0.0004
+	tankCost = 0.75
 	RESOURCE
 	{
 		name = Water
-		unitsPerVolume = 2.3 // 0.4632
+		unitsPerVolume = 1
 	}
 }
 // 0.4632
 B9_TANK_TYPE:NEEDS[B9PartSwitch]
 {
-	name = DS_LFO
-	tankMass = 0.0000
-	tankCost = 0
-	RESOURCE
-	{
-		name = LiquidFuel
-		unitsPerVolume = 0.20844
-		percentFilled = 100
-	}
-	RESOURCE
-	{
-		name = Oxidizer
-		unitsPerVolume = 0.25476
-		percentFilled = 100
-	}
-}
-B9_TANK_TYPE:NEEDS[B9PartSwitch]
-{
-	name = DS_LF
-	tankMass = 0.0000
-	tankCost = 0
-	RESOURCE
-	{
-		name = LiquidFuel
-		unitsPerVolume = 0.4632
-		percentFilled = 100
-	}
-}
-B9_TANK_TYPE:NEEDS[B9PartSwitch]
-{
 	name = DS_OX
-	tankMass = 0.0000
+	tankMass = 0
 	tankCost = 0
 	RESOURCE
 	{
 		name = Oxidizer
-		unitsPerVolume = 0.4632
+		unitsPerVolume = 1
 		percentFilled = 100
 	}
 }
@@ -153,30 +123,30 @@ B9_TANK_TYPE:NEEDS[B9PartSwitch]
 		SUBTYPE:NEEDS[CryogenicEngines|KerbalAtomics|FarFutureTechnologies]
 		{
 			name = HydroLOX
-			tankType = DS_HLOX
-			title = Propellium + Oxidizer
+			tankType = DS_PLOX
+			title = Propellium + Oxium
 		}
 	}
 }
 
-@PART[ds00_pres_mk1|ds00_pres_mk2|ds00_pres_mk2adap]:NEEDS[B9PartSwitch]
+@PART[ds00_pres_mk1|ds00_pres_mk2|ds00_pres_mk2adap]:NEEDS[B9PartSwitch]:FOR[00DeepSky]
 {
 	@MODULE[ModuleB9PartSwitch]
 	{
-		baseVolume = 863.5
+		baseVolume = 400 // x/2.1587
 	}
 }
-@PART[ds00_pres_srf1]:NEEDS[B9PartSwitch]
+@PART[ds00_pres_srf1]:NEEDS[B9PartSwitch]:FOR[00DeepSky]
 {
 	@MODULE[ModuleB9PartSwitch]
 	{
-		baseVolume = 259
+		baseVolume = 120
 	}
 }
-@PART[ds00_pres_250]:NEEDS[B9PartSwitch]
+@PART[ds00_pres_250]:NEEDS[B9PartSwitch]:FOR[00DeepSky]
 {
 	@MODULE[ModuleB9PartSwitch]
 	{
-		baseVolume = 3141.6
+		baseVolume = 1450
 	}
 }
