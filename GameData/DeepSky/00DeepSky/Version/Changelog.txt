@@ -5,6 +5,7 @@
 * Added tech tree node for Japier engines
 * Raised EC demand on in-flight Oxidizer generators
 * Added IntakeLqd to all intakes
+* Removed prefab smoke from Japier engines-- those become gigantic in KSP 1.4 due to inherent scale issue with the engines
 
 
 2.0.1 * 2018-02-28
