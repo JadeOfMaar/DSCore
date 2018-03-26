@@ -14,7 +14,7 @@ GLOBAL_RESOURCE
 	}
 }
 
-@PART[ds00_intakemk2|ds00_intrbm]:NEEDS[ThorTech]
+@PART[ds00_intmk2|ds00_intrbm]:NEEDS[ThorTech]
 {
 	RESOURCE
 	{

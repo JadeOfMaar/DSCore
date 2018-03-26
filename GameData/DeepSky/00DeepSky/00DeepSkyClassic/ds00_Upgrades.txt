@@ -37,7 +37,7 @@ PARTUPGRADE:NEEDS[!TheSpice]
 	description = Installs thicker and sturdier electrical pathway systems within select WarpJet engines or supplemental hardware for faster charging and longer runtime. Warning: Increased chance of overheating.
 }
 
-@PART[ds00_intakemk2,ds00_intrbm]
+@PART[ds00_intmk2,ds00_intrbm]
 {
 	
 	MODULE
