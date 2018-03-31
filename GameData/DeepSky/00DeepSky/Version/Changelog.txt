@@ -5,6 +5,7 @@
 * Added tech tree node for Japier engines
 * Raised EC demand on in-flight Oxidizer generators
 * Added IntakeLqd to all intakes
+* Custom drag cube for RBM intake/mount. Should fix its drag problem
 * Updated Japier engines
   * Removed prefab smoke from Japier engines-- model scale issue provoked by KSP 1.4
   * Raised Isp in Japier Burst Mode
