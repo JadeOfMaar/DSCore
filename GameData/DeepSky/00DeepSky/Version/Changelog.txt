@@ -1,6 +1,7 @@
-2.0.2 * 2018-03-00
+3.0.0 * 2018-04-09
 - - - -  - - - -  - - - -  - - - -
 * Polished off WBI Play Modes
+* New brand logo and flags
 * Found missing Tweakscale option
 * Added tech tree node for Japier engines
 * Raised EC demand on in-flight Oxidizer generators
