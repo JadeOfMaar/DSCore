@@ -1,32 +1,16 @@
-GLOBAL_RESOURCE
-{
-	// Please set Oxium intakes to CheckForOxygen = true
-	ResourceName = Oxium
-	ResourceType = 2
-	
-	Distribution
-	{
-		PresenceChance = 100
-		MinAbundance = 10
-		MaxAbundance = 12
-		Variance = 0
-		Dispersal = 0
-	}
-}
-
 @PART[ds00_intmk2|ds00_intrbm]:NEEDS[ThorTech]
 {
 	RESOURCE
 	{
-		name = Oxium
+		name = MillPower
 		amount = 0
-		maxAmount = 300
+		maxAmount = 10
 	}
 	
 	MODULE
 	{
 		name = ModuleResourceIntake
-		resourceName = Oxium
+		resourceName = MillPower
 		checkForOxygen = true
 		intakeTransformName = Intake
 		area = 0.015
@@ -43,7 +27,7 @@ GLOBAL_RESOURCE
 			UPGRADE
 			{
 				name__ = ds00_LOXDistiller
-				description__ = Oxium
+				description__ = MillPower for Oxium
 				techRequired__ = aerospaceTech
 				moduleIsEnabled = true
 			}
@@ -54,14 +38,19 @@ GLOBAL_RESOURCE
 	{
 		name = ModuleResourceConverter
 		AlwaysActive = true
-		ConverterName = Atmosphere Distiller
+		ConverterName = LOX Distiller
 		AutoShutdown = false
 		GeneratesHeat = false
 		UseSpecialistBonus = false
 		INPUT_RESOURCE
 		{
-			ResourceName = Oxium
-			Ratio = 19.47
+			ResourceName = MillPower
+			Ratio = 1
+		}
+		INPUT_RESOURCE
+		{
+			ResourceName = IntakeAir
+			Ratio = 25
 		}
 		INPUT_RESOURCE
 		{
@@ -70,7 +59,7 @@ GLOBAL_RESOURCE
 		}
 		OUTPUT_RESOURCE
 		{
-			ResourceName = Oxidizer
+			ResourceName = Oxium
 			Ratio = 5
 		}
 		moduleIsEnabled = false
@@ -80,7 +69,7 @@ GLOBAL_RESOURCE
 			UPGRADE
 			{
 				name__ = ds00_LOXDistiller
-				description__ = Oxium to Oxidizer.
+				description__ = IntakeAir to Oxium.
 				techRequired__ = aerospaceTech
 				moduleIsEnabled = true
 			}
