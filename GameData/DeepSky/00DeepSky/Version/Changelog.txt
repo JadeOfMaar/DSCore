@@ -2,6 +2,9 @@
 - - - -  - - - -  - - - -  - - - -
 * Updated LOX distiller function
 * Added WBI part tips!
+* Fixed RBM intake drag cube for real
+* Adjusted intake speeds and areas
+
 
 3.0.0 * 2018-04-09
 - - - -  - - - -  - - - -  - - - -
