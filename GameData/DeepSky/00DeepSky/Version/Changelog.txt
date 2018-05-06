@@ -4,6 +4,7 @@
 * Added WBI part tips!
 * Fixed RBM intake drag cube for real
 * Adjusted intake speeds and areas
+* Added missing FX for 2.5m Razor
 
 
 3.0.0 * 2018-04-09
