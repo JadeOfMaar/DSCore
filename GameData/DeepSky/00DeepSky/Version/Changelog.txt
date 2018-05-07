@@ -1,10 +1,11 @@
-3.0.1
+3.0.1 * 2018-05-07
 - - - -  - - - -  - - - -  - - - -
 * Updated LOX distiller function
 * Added WBI part tips!
 * Fixed RBM intake drag cube for real
 * Adjusted intake speeds and areas
 * Added missing FX for 2.5m Razor
+* Added Rescale! support for Argo WarpJet engines
 
 
 3.0.0 * 2018-04-09
