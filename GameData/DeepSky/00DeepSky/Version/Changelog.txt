@@ -1,3 +1,11 @@
+3.0.2 * 2018-07-09
+- - - -  - - - -  - - - -  - - - -
+* Added feature to add IntakeAtm or Atmosphere to all intakes that don't have it
+* Centralized MillPower resource
+* Disabled flameout plume in Japier engines
+* IntakeLOX in Classic Stock mode produces Oxidizer now, not Oxium
+
+
 3.0.1 * 2018-05-07
 - - - -  - - - -  - - - -  - - - -
 * Updated LOX distiller function
