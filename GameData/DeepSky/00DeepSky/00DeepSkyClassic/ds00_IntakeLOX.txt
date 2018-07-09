@@ -27,7 +27,7 @@
 			UPGRADE
 			{
 				name__ = ds00_LOXDistiller
-				description__ = MillPower for Oxium
+				description__ = MillPower for Oxidizer
 				techRequired__ = aerospaceTech
 				moduleIsEnabled = true
 			}
@@ -59,7 +59,7 @@
 		}
 		OUTPUT_RESOURCE
 		{
-			ResourceName = Oxium
+			ResourceName = Oxidizer
 			Ratio = 5
 			DumpExcess = True
 		}
@@ -70,7 +70,7 @@
 			UPGRADE
 			{
 				name__ = ds00_LOXDistiller
-				description__ = IntakeAir to Oxium.
+				description__ = IntakeAir to Oxidizer.
 				techRequired__ = aerospaceTech
 				moduleIsEnabled = true
 			}
