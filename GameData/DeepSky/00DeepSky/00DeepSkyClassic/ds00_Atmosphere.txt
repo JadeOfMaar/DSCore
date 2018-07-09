@@ -42,3 +42,16 @@
 		}
 	}
 }
+
+// Any Intake
+@PART:HAS[@MODULE[ModuleResourceIntake],@RESOURCE[IntakeAir],!RESOURCE[Atmosphere]]:NEEDS[!WarpPlugin,!GTI]
+{
+	+MODULE[ModuleResourceIntake]{ 
+	@resourceName = Atmosphere
+	@checkForOxygen = false
+	}
+
+	+RESOURCE[IntakeAir]{
+	@name = Atmosphere
+	}
+}
