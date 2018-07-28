@@ -5,7 +5,7 @@
 
 B9_TANK_TYPE:NEEDS[B9PartSwitch]
 {
-	name = DS_PPLM
+	name = DS_PLM
 	tankMass = 0.00007085
 	tankCost = 0.15
 	// percentFilled = 100
@@ -25,17 +25,17 @@ B9_TANK_TYPE:NEEDS[B9PartSwitch]
 	RESOURCE
 	{
 		name = Propellium
-		unitsPerVolume = 3
+		unitsPerVolume = 4.55
 	}
 	RESOURCE
 	{
 		name = Oxium
-		unitsPerVolume = 0.2
+		unitsPerVolume = 0.45
 	}
 }
 B9_TANK_TYPE:NEEDS[B9PartSwitch]
 {
-	name = DS_Atm
+	name = DS_ATM
 	tankMass = 0
 	tankCost = 0
 	// percentFilled = 100
@@ -48,7 +48,7 @@ B9_TANK_TYPE:NEEDS[B9PartSwitch]
 
 B9_TANK_TYPE:NEEDS[B9PartSwitch]
 {
-	name = DS_Xe
+	name = DS_XE
 	tankMass =  0.000233745
 	tankCost = 0
 	RESOURCE
@@ -93,13 +93,13 @@ B9_TANK_TYPE:NEEDS[B9PartSwitch]
 		SUBTYPE
 		{
 			name = AtmoStandard
-			tankType = DS_Atm
+			tankType = DS_ATM
 			title = Atmosphere
 		}
 		SUBTYPE
 		{
 			name = Xenon
-			tankType = DS_Xe
+			tankType = DS_XE
 			title = XenonGas
 		}
 		// SUBTYPE
@@ -117,7 +117,7 @@ B9_TANK_TYPE:NEEDS[B9PartSwitch]
 		SUBTYPE:NEEDS[CryogenicEngines|KerbalAtomics|FarFutureTechnologies]
 		{
 			name = Propellium
-			tankType = DS_PPLM
+			tankType = DS_PLM
 			title = Propellium
 		}
 		SUBTYPE:NEEDS[CryogenicEngines|KerbalAtomics|FarFutureTechnologies]
