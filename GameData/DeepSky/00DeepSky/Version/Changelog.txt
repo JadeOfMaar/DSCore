@@ -1,3 +1,12 @@
+3.0.3 * 2018-08-01
+- - - -  - - - -  - - - -  - - - -
+* Added new sounds for upcoming SABR3 Sterling
+* New and rearranged stuff concerning part upgrades (WIP)
+* Added config for applying B9 resource switching to all stock fuel tanks/wings (except the Xenon ones)
+  * Supports Pathfinder and classic Stock
+* Changed atmosphere tank type and subtype. May affect craft in-flight
+
+
 3.0.2 * 2018-07-09
 - - - -  - - - -  - - - -  - - - -
 * Added feature to add IntakeAtm or Atmosphere to all intakes that don't have it
