@@ -44,14 +44,16 @@
 }
 
 // Any Intake
-@PART:HAS[@MODULE[ModuleResourceIntake],@RESOURCE[IntakeAir],!RESOURCE[Atmosphere]]:NEEDS[!WarpPlugin,!GTI]
+@PART:HAS[@MODULE[ModuleResourceIntake]:HAS[!#resourceName[IntakeAtm]],!RESOURCE[Atmosphere]]:NEEDS[!WarpPlugin,!GTI]
 {
-	+MODULE[ModuleResourceIntake]{ 
-	@resourceName = Atmosphere
-	@checkForOxygen = false
+	+MODULE[ModuleResourceIntake]
+	{ 
+		@resourceName = Atmosphere
+		!checkForOxygen = false
 	}
 
-	+RESOURCE[IntakeAir]{
-	@name = Atmosphere
+	+RESOURCE[IntakeAir]
+	{
+		@name = Atmosphere
 	}
 }
