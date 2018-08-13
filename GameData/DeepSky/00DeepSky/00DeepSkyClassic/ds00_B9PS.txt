@@ -29,7 +29,7 @@ B9_TANK_TYPE:NEEDS[B9PartSwitch]
 	}
 	RESOURCE
 	{
-		name = Oxium
+		name = Oxidizer
 		unitsPerVolume = 0.45
 	}
 }
