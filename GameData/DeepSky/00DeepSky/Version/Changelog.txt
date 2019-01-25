@@ -1,7 +1,13 @@
+3.0.6 * 2019-01-25
+- - - -  - - - -  - - - -  - - - -
+* Added in-game declarations for compatibility with WBI Play Mode.
+
+
 3.0.5 * 2019-01-02
 - - - -  - - - -  - - - -  - - - -
 * Version bump for CKAN.
 * Stop including MiniAVC.
+
 
 3.0.3 * 2018-08-01
 - - - -  - - - -  - - - -  - - - -
