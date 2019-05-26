@@ -91,7 +91,7 @@ B9_TANK_TYPE:NEEDS[B9PartSwitch,Pathfinder]
 	RESOURCE
 	{
 		name = Nitronite
-		unitsPerVolume = 5
+		unitsPerVolume = 1
 	}
 }
 
