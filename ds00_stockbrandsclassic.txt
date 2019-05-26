@@ -234,6 +234,12 @@ B9_TANK_TYPE:NEEDS[B9PartSwitch,Pathfinder]
 		}
 		SUBTYPE
 		{
+			name = Nitronite
+			tankType = DS_N2O
+			title = Nitronite
+		}
+		SUBTYPE
+		{
 			name = Oxium
 			tankType = DS_OXM
 			title = Oxium
