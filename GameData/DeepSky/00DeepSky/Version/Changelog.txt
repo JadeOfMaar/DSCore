@@ -2,7 +2,8 @@
 - - - -  - - - -  - - - -  - - - -
 * JNSQ detection in WarpJet Isp rescale config.
 * Fixed drag cube in Mk2 Voyager intake.
-* Fixed resource names (ArgonGas, XenonGas) in intake/harvester modules. Thanks to @psylintdev. 
+* Normalized heat tolerances in intakes.
+* Fixed resource names (ArgonGas, XenonGas) in intake/harvester modules. Thanks to @psylintdev.
 
 
 3.0.7 * 2019-03-23
