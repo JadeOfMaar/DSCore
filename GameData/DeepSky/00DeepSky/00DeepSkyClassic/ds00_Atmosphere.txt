@@ -44,7 +44,7 @@
 }
 
 // Any Intake
-@PART:HAS[@MODULE[ModuleResourceIntake]:HAS[~resourceName[IntakeAtm]],!RESOURCE[Atmosphere]]:NEEDS[!WarpPlugin,!GTI]
+@PART:HAS[@MODULE[ModuleResourceIntake]:HAS[~resourceName[IntakeAtm]],!RESOURCE[Atmosphere]]:NEEDS[!WarpPlugin,!GTI]:LAST[DeepSky]
 {
 	+MODULE[ModuleResourceIntake]:HAS[#resourceName[IntakeAir]]
 	{ 
