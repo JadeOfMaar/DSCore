@@ -1,7 +1,7 @@
 {
 	"NAME":"DSCore",
 	"DOWNLOAD":"https://github.com/JadeOfMaar/DSCore/releases",
-	"URL":"https://github.com/JadeOfMaar/DSCore/tree/master/GameData/DeepSky/DSCore/Version/DSCore.version",
+	"URL":"https://github.com/JadeOfMaar/DSCore/raw/master/GameData/DeepSky/00DeepSky/Version/DSCore.version",
 	"CHANGE_LOG_URL":"https://github.com/JadeOfMaar/DSCore/tree/master/GameData/DeepSky/DSCore/Version/Changelog.txt",
 	"GITHUB":
 	{
