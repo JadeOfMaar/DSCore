@@ -1,4 +1,4 @@
-// Propellium	0.0000708
+// Propellium	0.354
 // SpiceGas		0.000001251
 // Water		0.001000000
 // XenonGas		0.000100000
@@ -12,7 +12,7 @@ B9_TANK_TYPE:NEEDS[B9PartSwitch]
 	RESOURCE
 	{
 		name = Propellium
-		unitsPerVolume = 10
+		unitsPerVolume = 2.7
 	}
 }
 
@@ -25,12 +25,12 @@ B9_TANK_TYPE:NEEDS[B9PartSwitch]
 	RESOURCE
 	{
 		name = Propellium
-		unitsPerVolume = 5
+		unitsPerVolume = 1.35
 	}
 	RESOURCE
 	{
 		name = Oxidizer
-		unitsPerVolume = 0.5
+		unitsPerVolume = 0.45
 	}
 }
 B9_TANK_TYPE:NEEDS[B9PartSwitch]
