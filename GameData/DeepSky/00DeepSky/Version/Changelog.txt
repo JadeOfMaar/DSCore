@@ -1,3 +1,12 @@
+3.0.9
+- - - -  - - - -  - - - -  - - - -
+* Added colors to pressure tank B9 tank options.
+* Moved Restock whitelist file to Thor Tech.
+* Updated classic Stock Propellium tank ratios.
+* Updated patch to hopefully more properly run. (The one that adds IntakeAtm to all intakes.)
+* Updated tech tree nodes following compatibility updates for them done in OPT Reconfig.
+
+
 3.0.8 * 2019-06-09
 - - - -  - - - -  - - - -  - - - -
 * JNSQ detection in WarpJet Isp rescale config.
