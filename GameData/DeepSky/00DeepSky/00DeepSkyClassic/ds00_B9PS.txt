@@ -95,6 +95,8 @@ B9_TANK_TYPE:NEEDS[B9PartSwitch]
 			name = AtmoStandard
 			tankType = DS_ATM
 			title = Atmosphere
+			primaryColor = LightGrey
+			secondaryColor = LightGrey
 		}
 		SUBTYPE
 		{
@@ -113,18 +115,24 @@ B9_TANK_TYPE:NEEDS[B9PartSwitch]
 			name = Water
 			tankType = DS_H2O
 			title = Water
+			primaryColor = Ocean
+			secondaryColor = Ocean
 		}
 		SUBTYPE:NEEDS[CryogenicEngines|KerbalAtomics|FarFutureTechnologies]
 		{
 			name = Propellium
 			tankType = DS_PLM
 			title = Propellium
+			primaryColor = ResourceColorLqdHydrogen
+			secondaryColor = ResourceColorLqdHydrogen
 		}
 		SUBTYPE:NEEDS[CryogenicEngines|KerbalAtomics|FarFutureTechnologies]
 		{
 			name = HydroLOX
 			tankType = DS_PLOX
-			title = Propellium + Oxium
+			title = Propellium + Oxidizer
+			primaryColor = ResourceColorLqdHydrogen
+			secondaryColor = ResourceColorOxidizer
 		}
 	}
 }
