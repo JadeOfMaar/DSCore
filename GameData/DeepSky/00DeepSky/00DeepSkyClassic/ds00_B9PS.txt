@@ -45,7 +45,18 @@ B9_TANK_TYPE:NEEDS[B9PartSwitch]
 		unitsPerVolume = 1
 	}
 }
-
+B9_TANK_TYPE:NEEDS[B9PartSwitch]
+{
+	name = DS_ATMC
+	tankMass = 0
+	tankCost = 0
+	// percentFilled = 100
+	RESOURCE
+	{
+		name = CompressedAtmosphere
+		unitsPerVolume = 1
+	}
+}
 B9_TANK_TYPE:NEEDS[B9PartSwitch]
 {
 	name = DS_XE
@@ -55,6 +66,30 @@ B9_TANK_TYPE:NEEDS[B9PartSwitch]
 	{
 		name = XenonGas
 		unitsPerVolume = 3
+	}
+}
+B9_TANK_TYPE:NEEDS[B9PartSwitch]
+{
+	name = DS_NIT
+	tankMass = 0
+	tankCost = 0
+	// percentFilled = 100
+	RESOURCE
+	{
+		name = Nitronite
+		unitsPerVolume = 1
+	}
+}
+B9_TANK_TYPE:NEEDS[B9PartSwitch]
+{
+	name = DS_OXM
+	tankMass = 0
+	tankCost = 0
+	// percentFilled = 100
+	RESOURCE
+	{
+		name = Oxium
+		unitsPerVolume = 1
 	}
 }
 B9_TANK_TYPE:NEEDS[B9PartSwitch]
@@ -82,6 +117,34 @@ B9_TANK_TYPE:NEEDS[B9PartSwitch]
 	}
 }
 
+B9_TANK_TYPE:NEEDS[B9PartSwitch]
+{
+	name = DS_RPT
+	tankMass = 0
+	tankCost = 0
+	RESOURCE
+	{
+		name = Raptium
+		unitsPerVolume = 5
+	}
+}
+B9_TANK_TYPE:NEEDS[B9PartSwitch]
+{
+	name = DS_RLOX
+	tankMass = 0
+	tankCost = 0
+	RESOURCE
+	{
+		name = Raptium
+		unitsPerVolume = 1.875
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		unitsPerVolume = 0.625
+	}
+}
+
 @PART[ds00_pres_mk1|ds00_pres_mk2|ds00_pres_mk2adap|ds00_pres_srf1|ds00_pres_250]:NEEDS[B9PartSwitch]
 {
 	MODULE
@@ -95,6 +158,14 @@ B9_TANK_TYPE:NEEDS[B9PartSwitch]
 			name = AtmoStandard
 			tankType = DS_ATM
 			title = Atmosphere
+			primaryColor = LightGrey
+			secondaryColor = LightGrey
+		}
+		SUBTYPE
+		{
+			name = AtmoCompressed
+			tankType = DS_ATMC
+			title = Compressed Atm
 			primaryColor = LightGrey
 			secondaryColor = LightGrey
 		}
@@ -118,20 +189,52 @@ B9_TANK_TYPE:NEEDS[B9PartSwitch]
 			primaryColor = Ocean
 			secondaryColor = Ocean
 		}
-		SUBTYPE:NEEDS[CryogenicEngines|KerbalAtomics|FarFutureTechnologies]
+		SUBTYPE
+		{
+			name = Oxium
+			tankType = DS_OXM
+			title = Oxium
+			primaryColor = ResourceColorOxidizer
+			secondaryColor = ResourceColorOxidizer
+		}
+		SUBTYPE
+		{
+			name = Nitronite
+			tankType = DS_NIT
+			title = Propellium
+			primaryColor = ResourceColorMonoPropellant
+			secondaryColor = ResourceColorMonoPropellant
+		}
+		SUBTYPE
 		{
 			name = Propellium
 			tankType = DS_PLM
 			title = Propellium
-			primaryColor = ResourceColorLqdHydrogen
-			secondaryColor = ResourceColorLqdHydrogen
+			primaryColor = Lightblue
+			secondaryColor = Lightblue
 		}
-		SUBTYPE:NEEDS[CryogenicEngines|KerbalAtomics|FarFutureTechnologies]
+		SUBTYPE
 		{
 			name = HydroLOX
 			tankType = DS_PLOX
 			title = Propellium + Oxidizer
-			primaryColor = ResourceColorLqdHydrogen
+			primaryColor = Lightblue
+			secondaryColor = ResourceColorOxidizer
+		}
+		SUBTYPE
+		{
+			name = Raptium
+			tankType = DS_RPT
+			title = Raptium
+			primaryColor = PurpleyPink
+			secondaryColor = PurpleyPink
+		}
+		SUBTYPE
+		{
+			name = RaptaLOX
+			tankType = DS_RLOX
+			title = Raptium + Oxidizer
+			primaryColor = PurpleyPink
 			secondaryColor = ResourceColorOxidizer
 		}
 	}
