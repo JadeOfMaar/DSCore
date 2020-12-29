@@ -1,3 +1,8 @@
+3.2.0 * 2020-12-29
+- - - -  - - - -  - - - -  - - - -
+* Added KSP 1.11 stock inventory.
+
+
 3.1.0 * 2020-11-20
 - - - -  - - - -  - - - -  - - - -
 * Added restock whitelist for pressure tanks (on request by @ hemeac).
